@@ -385,3 +385,78 @@ import math
 #for i in frutas:
 #    if (x == "Banana"):
 #        print(x)
+## Lista de animales, uno es "Loro". Imprimimos nombre del animal y cuando salga el Loro
+## hacemos un break y mostramos su posición
+#listAnimal = ["Rata", "Cuervo", "Loro", "Perro"]
+#listUpper = [animal.upper() for animal in listAnimal] #Horrible
+#print(listUpper)
+#
+## Recorrer lista numérica y crear otra nueva en base a la primera,
+## pero guardando los pares.
+#numList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#oddList = [num for num in numList if num % 2 == 0] # Obtuso de cojones
+#evenList = [num for num in numList if num % 2 != 0]
+#print(f"Par: {oddList}")
+#print(f"Impar: {evenList}")
+## TANDA EJERCICIOS FOR
+## Calcula la media de los números de una lista usando un bucle for
+#
+## Busca el máximo de una lista
+## Dada la siguiente lista de números:
+## numeros = [15, 5, 25, 10, 20]
+## Encuentra el número máximo en la lista usando un bucle for.
+#
+## Dada la siguiente lista de palabras
+## palabras = ["casa", "árbol", "sol", "elefante", "luna"]
+## Crea una nueva lista que contenga solo las palabras con máss de 5 letras
+## Usando un bucle for y list comprehesion
+##
+## WHILES
+#i = 0
+#while (i < 10):
+#    print(f"Iteración: {i}")
+#    i+=1
+#
+## Calcula la raíz cuadrada de un número.
+## Tenemos tres intentos y el número no puede ser negativo.
+#tries = 0
+#numA = int(input("Numero a adivinar la raíz cuadrada: "))
+#raiz = math.sqrt(numA)
+#print("Tienes tres intentos")
+#while (tries < 3):
+#    numB = int(input("Tu elección: "))
+#    if (raiz == numB):
+#        print("Número correcto")
+#        break
+#    elif (tries == 2):
+#        print("Fallaste 3 veces. Programa terminado")
+#    else:
+#        print("Error")
+#    tries+=1
+#
+## While con if anidado y un break
+## que salga del bucle cuando una var sea n
+#var = 0
+#n = 5
+#while (True):
+#    print(f"Iteración: {var}")
+#    if (var == n):
+#        print(f"Var es igual a {n}")
+#        print(f"Fin del bucle")
+#        break
+#    var+=1
+## Match-Case
+#def ft_operacion(opcion):
+#    match opcion:
+#        case 1:
+#            return ("Opción 1 seleccionada")
+#        case 2:
+#            return ("Opción 2 seleccionada")
+#        case 3:
+#            return ("Opción 3 seleccionada")
+#        case _:
+#            return ("Opción fuera de rango (1-3)")
+#
+#print(ft_operacion(2))
+#print(ft_operacion(4))
+    
