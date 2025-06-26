@@ -122,6 +122,87 @@ elif (ex == 4):
 	print("")
 	for i in range(1, 11):
 		print(f"{numA} x {i} = {numA * i}	| {ft_tipo(numA * i)}")
-#elif (ex == 5):
+elif (ex == 5):
+	print("Ingrese una contraseña que contenga un mínimo de 8 carácteres, una mayúscula y un número")
+	myStr = input("Contraseña: ")
+	characters = 0
+	capital = 0
+	numbers = 0
+	
+	for char in myStr:
+		characters+=1
+		if (char in "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"):
+			capital+=1
+		if (char in "0123456789"):
+			numbers+=1
+	if (characters >= 8 and capital >= 1 and numbers >= 1):
+		print("Contraseña aceptada.")
+	else:
+		print("Contraseña inválida: ")
+		if (characters < 8):
+			print("- No contiene un mínimo de 8 carácteres.")
+		if (capital < 1):
+			print("- No contiene ni una mayúscula.")
+		if (numbers < 1):
+			print("- No contiene ni un número.")
+elif (ex == 6):
+	numA = random.randint(1, 6)
+	tries = 0
+
+	print("Programa de tiradas automáticas de un D6 hasta conseguir el número generado.\n")
+	print(f"Número generado: {numA}\n")
+	while (True):
+		dice = random.randint(1, 6)
+		tries+=1
+		print(f"Tirada número {tries} con resultado {dice}")
+		if (numA == dice):
+			break
+elif (ex == 7):
+	print("Introduce 5 enteros de uno en uno para construir y analizar una lista.\n")
+	numList = []
+	min = 0
+	pos = 0
+	zero = 0
+
+	for i in range(1, 6):
+		numList = numList + [int(input(f"Valor {i}: "))]
+	for i in numList:
+		if (i > 0):
+			pos+=1
+		elif (i < 0):
+			min+=1
+		else:
+			zero+=1
+	print(f"\nPositivos: {pos}\nNegativos: {min}\nCerapios: {zero}")
+elif (ex == 8):
+	num = random.randint(1, 50)
+
+	print("Adivina el numerito secreto")
+	while (True):
+		numA = int(input("Tu numerito: "))
+		if (num < numA):
+			print("Apunta hacia abajo")
+		elif (num > numA):
+			print("Apunta hacia arriba")
+		else:
+			break
+	print(f"¡Enhorabuena!\nEl numero secreto era {num}")
+elif (ex == 9):
+	num = int(input("Numerito: "))
+
+	if num < 0:
+		print("El número debe ser positivo.")
+	else:
+		factorial = 1
+		for i in range(1, num + 1):
+			factorial *= i
+	print(f"El factorial de {num} es {factorial}")
+elif (ex == 10):
+	num = int(input("Numerito para buscar un valor superior a 100 que sea divisible entre él: "))
+	i = 100
+
+	while (i % num != 0):
+		i+=1
+	print(f"El primer número divisible entre {num} a partir del 100 es el {i}")
 else:
 	print(f"{ex}: ejercicio inválido")
