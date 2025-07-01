@@ -43,9 +43,34 @@ def lstsum(arg) -> int:
 
 def lstmedia(arg) -> int:
     lst = list(arg)
-    length = lst
-    print(length)
+    length = len(lst)
+    #print(length) # debug
     result = 0
     for val in lst:
         result += val
-    return (result//length)
+    return (division(result, length))
+
+def lstpoles(arg):
+    lst = list(arg)
+    max = lst[0]
+    min = lst[0]
+    for val in lst:
+        if (val > max):
+            max = val
+        if (val < min):
+            min = val
+    return (max, min)
+
+def lstfactorial(arg):
+    lst = list(arg)
+    factorial = []
+    for val in lst:
+        result = 1
+        for i in range(1, val + 1):
+            result*=i
+        factorial.append(result)
+    return factorial
+            
+def lstview(arg):
+    lst = list(arg)
+    print (f"Lista actual: {lst}")
