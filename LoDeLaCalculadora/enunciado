@@ -1,0 +1,13 @@
+Proyecto: Calculadora de Estadísticas y Secuencias
+
+Este proyecto demuestra el uso de diferentes tipos de funciones en Python:
+- Funciones definidas por el usuario
+- Funciones anónimas (lambdas)
+- Funciones con argumentos
+- Funciones con valores de retorno
+- Funciones argumentos por defecto
+- Funciones con argumentos variables
+- Funciones recursivas
+
+Permite agregar números a una lista, calcular estadísticas básicas,
+y calcular factorial y números de Fibonacci usando recursión.

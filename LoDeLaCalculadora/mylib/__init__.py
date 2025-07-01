@@ -1,0 +1,1 @@
+from .operaciones import suma, resta, producto, division, lstadd, lstsum, lstmedia
