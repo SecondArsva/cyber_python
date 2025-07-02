@@ -1,6 +1,7 @@
 import os
 import time
-from mylib import suma, resta, producto, division, lstadd, lstsum, lstmedia, lstpoles, lstview, lstfactorial
+import random
+from mylib import suma, resta, producto, division, lstadd, lstsum, lstmedia, lstpoles, lstview, lstfactorial, fibonacci
 
 lst = [1, 2, 3]
 
@@ -35,9 +36,11 @@ while (True):
         print(f"Factoriales: {lstfactorial(lst)}")
         input("Continuar...")
     elif (ex == 6):
-        pass
+        num = random.choice(lst)
+        print(f"Sucesión de Fibonacci: {fibonacci(num)}")
+        input("Continuar...")
     elif (ex == 7):
-        pass
+        pass # Este no lo tengo aún
     elif (ex == 8):
         lstview(lst)
         input("Contiuar...")
@@ -45,6 +48,8 @@ while (True):
         print("¡Chao, chao, chachaochao!")
         time.sleep(1)
         break
+    elif (ex == ""):
+        pass
     else:
         print("Opción inválida")
         time.sleep(1)

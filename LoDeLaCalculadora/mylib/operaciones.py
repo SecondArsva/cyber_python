@@ -74,3 +74,14 @@ def lstfactorial(arg):
 def lstview(arg):
     lst = list(arg)
     print (f"Lista actual: {lst}")
+
+def fibonacci(num):
+    a = 0
+    b = 1
+    aux = a
+    for i in range(1, num, 1):
+        #print(f"A: {a}  B: {b}") # debug
+        aux = b
+        b = a + b
+        a = aux
+    return a

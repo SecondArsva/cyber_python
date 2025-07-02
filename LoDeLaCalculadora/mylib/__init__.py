@@ -1,1 +1,1 @@
-from .operaciones import suma, resta, producto, division, lstadd, lstsum, lstmedia, lstpoles, lstview, lstfactorial
+from .operaciones import suma, resta, producto, division, lstadd, lstsum, lstmedia, lstpoles, lstview, lstfactorial, fibonacci
